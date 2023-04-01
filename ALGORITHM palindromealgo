@@ -1,0 +1,21 @@
+ALGORITHM palindrome
+VAR
+    i, j: INTEGER = 0;
+    word,word2: STRING;
+BEGIN
+    write("input the word")
+    Read(word)
+    word2=word
+    i= length-1
+    FOR j FROM 0 TO length-1 STEP 1  DO
+    word2[j]=word[i]
+    i=i-1
+    END_FOR
+    FOR i FROM 0 TO length-1 STEP 1  DO
+        IF (word2=word) THEN
+            write("Word is a palindrome")
+            ELSE
+            write("Word isn't a palindrome")
+        END_IF
+    END_FOR
+END
